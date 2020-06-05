@@ -1,7 +1,7 @@
 # UAH-Website
 Public domain for University of Alberta Hip Hop Club
 
-                                                               ###<b>WEBSITE PROGRESSION</b>###
+                                                   ###<b>WEBSITE PROGRESSION</b>###
 
 1. Start with requirements; analyse those requirements; formulate the needs and goals of the website - that is, what it must achieve.
 
