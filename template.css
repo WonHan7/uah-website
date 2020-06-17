@@ -28,6 +28,44 @@ div {
 }
 
 
+.fade-in {
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
 a:link, :visited {
     color: rgba(0,0,0,1);
     opacity: 0.5;
@@ -216,6 +254,160 @@ hr {
     display: inline-block;
 }
 .gameText {
+    color: rgb(255,255,255);
+    font-size: 48px;
+}
+
+
+/* For "sched.html" */
+.monBox {
+    margin-top: 0px;
+
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    background-color: rgba(0,0,11,1);
+
+    font-size: 64px;
+    text-align: center;
+    color: rgb(255,255,255);
+    
+    position: relative;
+}
+.monSched {
+    display: none;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    background-color: rgba(0,0,11,1);
+    color: rgb(255,255,255);
+    font-size: 48px;
+}
+.monBox:hover + .monSched, .monSched:hover {
+    display: block;
+}
+
+.tuesBox {
+    margin-top: 0px;
+
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    background-color: rgb(255,255,255);
+
+    font-size: 64px;
+    text-align: center;
+    
+    position: relative;
+}
+.tuesSched {
+    display: none;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    background-color: rgb(255,255,255);
+    color: rgba(0,0,11,1);
+    font-size: 48px;
+}
+.tuesBox:hover + .tuesSched, .tuesSched:hover {
+    display: block;
+}
+
+.wedBox {
+    margin-top: 0px;
+
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    background-color: rgba(0,0,11,1);
+
+    font-size: 64px;
+    text-align: center;
+    color: rgb(255,255,255);
+    
+    position: relative;
+}
+.wedSched {
+    display: none;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    background-color: rgba(0,0,11,1);
+    color: rgb(255,255,255);
+    font-size: 48px;
+}
+.wedBox:hover + .wedSched, .wedSched:hover {
+    display: block;
+}
+
+.thursBox {
+    margin-top: 0px;
+
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    background-color: rgb(255,255,255);
+
+    font-size: 64px;
+    text-align: center;
+    
+    position: relative;
+}
+.thursSched {
+    display: none;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    background-color: rgb(255,255,255);
+    color: rgba(0,0,11,1);
+    font-size: 48px;
+}
+.thursBox:hover + .thursSched, .thursSched:hover {
+    display: block;
+}
+
+.calBox {
+    margin-top: 0px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    background-color: rgba(0,0,11,1);
+
+    text-align: left;
+}
+.cBox {
+    margin-left: 25px;
+
+    width: 1000px;
+    height: 660px;
+
+    display: inline-block;
+}
+.cLogo {
+    border: 0px;
+    border-radius: 5px;
+
+    width: 1000px;
+    height: 660px;
+}
+.cTextBox {
+    margin-left: 45px;
+    margin-right: 25px;
+
+    padding-top: 250px;
+    padding-bottom: 0px;
+
+    width: 800px;
+
+    text-align: center;
+    display: inline-block;
+}
+.cText {
     color: rgb(255,255,255);
     font-size: 48px;
 }
