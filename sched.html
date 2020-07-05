@@ -1,21 +1,159 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
+<head>
     <!-- ALL IMPORTS GO HERE -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="template.css" media="screen"/>
 
     <!-- ALL CSS STYLES GO HERE -->
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-size: 16px;
+        }
+        #timeline {
+            display: -webkit-box;
+            display: flex;
+            background-color: #031625;
+        }
+        #timeline:hover .tl-item {
+            width: 23.3333%;
+        }
 
+        .tl-item {
+            -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+            position: relative;
+            width: 25%;
+            height: 100vh;
+            min-height: 600px;
+            color: #fff;
+            overflow: hidden;
+            -webkit-transition: width 0.5s ease;
+            transition: width 0.5s ease;
+        }
+        .tl-item:before, .tl-item:after {
+            -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .tl-item:after {
+            background: rgba(3, 22, 37, 0.85);
+            opacity: 1;
+            -webkit-transition: opacity 0.5s ease;
+            transition: opacity 0.5s ease;
+        }
+        .tl-item:before {
+            background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(75%, black));
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
+            z-index: 1;
+            opacity: 0;
+            -webkit-transform: translate3d(0, 0, 0) translateY(50%);
+                    transform: translate3d(0, 0, 0) translateY(50%);
+            -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+            transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+        }
+        .tl-item:hover {
+            width: 30% !important;
+        }
+        .tl-item:hover:after {
+            opacity: 0;
+        }
+        .tl-item:hover:before {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0) translateY(0);
+                    transform: translate3d(0, 0, 0) translateY(0);
+            -webkit-transition: opacity 1s ease, -webkit-transform 1s ease 0.25s;
+            transition: opacity 1s ease, -webkit-transform 1s ease 0.25s;
+            transition: opacity 1s ease, transform 1s ease 0.25s;
+            transition: opacity 1s ease, transform 1s ease 0.25s, -webkit-transform 1s ease 0.25s;
+        }
+        .tl-item:hover .tl-content {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            -webkit-transition: all 0.75s ease 0.5s;
+            transition: all 0.75s ease 0.5s;
+            }
+            .tl-item:hover .tl-bg {
+            -webkit-filter: grayscale(0);
+                    filter: grayscale(0);
+        }
+
+        .tl-content {
+            -webkit-transform: translate3d(0, 0, 0) translateY(25px);
+                    transform: translate3d(0, 0, 0) translateY(25px);
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            margin: 0 1.618em;
+            top: 55%;
+            opacity: 0;
+        }
+        .tl-content h1 {
+            font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+            text-transform: uppercase;
+            color: #1779cf;
+            font-size: 1.44rem;
+            font-weight: normal;
+        }
+
+        .tl-year {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+                    transform: translateX(-50%) translateY(-50%);
+            z-index: 1;
+        }
+        .tl-year p {
+            font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-size: 1.728rem;
+            line-height: 0;
+        }
+
+        .tl-bg {
+            -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center center;
+            -webkit-transition: -webkit-filter 0.5s ease;
+            transition: -webkit-filter 0.5s ease;
+            transition: filter 0.5s ease;
+            transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+            -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+        }
     </style>
+</head>
 
-    <!-- ALL HTML CODE GOES HERE -->
+<body>
+
+    <!-- HEADER -->
     <div class="basic">
 
         <div class="logoBox">
             <img src="images/UAH2.png" class="headLogo" alt="University of Alberta Hip Hop Club">
             <!-- University of Alberta Hip Hop Club -->
         </div>
+
         <hr>
 
         <ul class="navBarBox">
@@ -26,101 +164,110 @@
             <li><a href="team.html">Team</a></li>
             <li><a href="store.html">Store</a></li>
         </ul>
+
+    </div>
+
+    <!-- SCHEDULE -->
+    <section id="timeline" style="line-height: 1.75;">
+
+        <div class="tl-item">
+            <div class="tl-bg" style="background-image: url(images/Break_Intro.jpg)"></div>
         
-        <div class="monBox">MONDAY</div>
-        <div class="monSched">
-            <div class="cBox">
-                <img src="images/Break_Intro.jpg" class="showLogo" alt="Break">
+            <div class="tl-year">
+                <p class="f2 heading--sanSerif">MONDAY</p>
             </div>
-            <div class="cTextBox" style="float:right;">
-                <p class="fade-in">
-                    FILLER
-                </p>
+        
+            <div class="tl-content">
+                <h1>BREAKING | PERFORMANCE TEAM</h1>
+                <p>FILLER TEXT ABOUT BREAKING AND PERFORMANCE TEAM</p>
             </div>
+        </div>
+      
+        <div class="tl-item">
+      
+            <div class="tl-bg" style="background-image: url(images/Dance_Drop3.jpg)"></div>
+        
+            <div class="tl-year">
+                <p class="f2 heading--sanSerif">TUESDAY</p>
+            </div>
+        
+            <div class="tl-content">
+                <h1 class="f3 text--accent ttu">UNKNOWN CLASS</h1>
+                <p>FILLER TEXT</p>
+            </div>
+      
+        </div>
+      
+        <div class="tl-item">
+      
+            <div class="tl-bg" style="background-image: url(images/Dance_Drop4.jpg)"></div>
+        
+            <div class="tl-year">
+                <p class="f2 heading--sanSerif">WEDNESDAY</p>
+            </div>
+        
+            <div class="tl-content">
+                <h1 class="f3 text--accent ttu">URBAN CHOREO<br>| BEGINNER & INTERMEDIATE |</h1>
+                <p>FILLTER TEXT ABOUT BEGINNER CLASSES</p>
+            </div>
+      
+        </div>
+      
+        <div class="tl-item">
+      
+            <div class="tl-bg" style="background-image: url(images/Advanced_Drop1.jpg)"></div>
+        
+            <div class="tl-year">
+                <p class="f2 heading--sanSerif">THURSDAY</p>
+            </div>
+        
+            <div class="tl-content">
+                <h1 class="f3 text--accent ttu">URBAN CHOREO<br>| ADVANCED |</h1>
+                <p>FILLER TEXT ABOUT ADVANCED CLASSES</p>
+            </div>
+
         </div>
 
-        <div class="tuesBox">TUESDAY</div>
-        <div class="tuesSched">
-            <div class="cBox">
-                <img src="images/Dance_Drop1.jpg" class="showLogo" alt="Drop-In">
-            </div>
-            <div class="cTextBox" style="float:right;">
-                <p class="fade-in">
-                    FILLER
-                </p>
-            </div>
-        </div>
+    </section>
 
-        <div class="wedBox">WEDNESDAY</div>
-        <div class="wedSched">
-            <div class="cBox">
-                <img src="images/Dance_Drop5.jpg" class="showLogo" alt="Beginner/Intermediate">
-            </div>
-            <div class="cTextBox" style="float:right;">
-                <p class="fade-in">
-                    FILLER
-                </p>
-            </div>
-        </div>
-
-        <div class="thursBox">THURSDAY</div>
-        <div class="thursSched">
-            <div class="cBox">
-                <img src="images/Advanced_Drop1.jpg" class="showLogo" alt="Advanced">
-            </div>
-            <div class="cTextBox" style="float:right;">
-                <p class="fade-in">
-                    FILLER
-                </p>
-            </div>
-        </div>
-
-        <div class="calBox">
-            <div class="cBox">
-                <iframe src="https://calendar.google.com/calendar/embed?src=9svum5205eeqta45fc79r67bo4%40group.calendar.google.com&ctz=America%2FEdmonton" 
-                class="cLogo" style="float: left;" frameborder="0" scrolling="no"></iframe>
-            </div>
-            <div class="cTextBox" style="float:right;">
-                <p class="cText fade-in">
-                    Click <img src="images/instruction_zoom.png" alt=""> on the 
-                    <i>Google Calendar</i> to keep up-to-date with future UAH events!
-                </p>
-            </div>
-        </div>
+    <!-- FOOTER -->
+    <div class="basic">
 
         <footer class="footBox">
             <div class="foot1">
-                <h3 class="footHead">SOCIAL MEDIA</h3>
+                <h3 class="footHead"><em>SOCIAL MEDIA</em></h3>
                 <p class="footText">
-                    <i>Join our growing community of dancers and<br>
-                    keep up to date with upcoming events.<br></i>
+                    Join our growing community of dancers and<br>
+                    keep up to date with upcoming events.<br>
                 </p>
             </div>
 
             <div class="foot2">
-                <h3 class="footHead">CONTACT US</h3>
+                <h3 class="footHead"><em>CONTACT US</em></h3>
                 <p class="footText">
-                    <i>UNIVERSITY OF ALBERTA HIP HOP CLUB<br>
-                    Email: uahiphop@ualberta.ca</i>
+                    UNIVERSITY OF ALBERTA HIP HOP CLUB<br>
+                    uahiphop@ualberta.ca
                 </p>
             </div>
 
             <div class="foot3">
-                <h3 class="footHead">LOCATION</h3>
+                <h3 class="footHead"><em>LOCATION</em></h3>
                 <p class="footText">
-                    <i>STUDIO 1-650<br>
+                    STUDIO 1-650<br>
                     3-100 University Hall Van Vliet Complex<br>
-                    Edmonton | Alberta | T6G 2H9</i>
+                    Edmonton | Alberta | T6G 2H9
                 </p>
             </div>
 
             <div class="foot4">
-                <h3 class="footHead">SITEMAP</h3>
                 <p class="footText">
-                    INTEGRATE INTERACTIVE SITEMAP
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419.2943762888289!2d-113.52791863558143!3d53.524071841955724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a021f536c8f601%3A0x7a8cf2d9ea07e3d6!2sIntramural%2FRec%20Sports%20Office!5e0!3m2!1sen!2sca!4v1593899415195!5m2!1sen!2sca"
+                    width="350" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </p>
             </div>
         </footer>
+
     </div>
 
+</body>
 </html>
