@@ -4,6 +4,91 @@
     <!-- ALL IMPORTS GO HERE -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="template.css" media="screen"/>
+
+    <style>
+        .wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -190px 0 0 -468px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            color: #9f9f9f;
+            font-size: 15px;
+        }
+        .package {
+            box-sizing: border-box;
+            width: 301px;
+            height: 380px;
+            border: 3px solid #e8e8e8;
+            border-radius: 7px;
+            display: inline-block;
+            padding: 24px;
+            text-align: center;
+            float: left;
+            -webkit-transition: margin-top .5s linear;
+            transition: margin-top .5s linear;
+            position: relative;
+            margin-right: 11px;
+        }
+        .package:hover {
+            margin-top: -30px;
+            -webkit-transition: margin-top .3s linear;
+            transition: margin-top .3s linear;
+        }
+        .name {
+            color: #565656;
+            font-weight: 300;
+            font-size: 3rem;
+            margin-top: -5px;
+        }
+        .price {
+            margin-top: 7px;
+            font-weight: bold;
+        }
+        .price::after {
+            content: " / month per user";
+            font-weight: normal;
+        }
+        .trial {
+            font-size: .9rem;
+            font-weight: 600;
+            padding: 2px 21px 2px 21px;
+            color: #33c4b6;
+            border: 1px solid #e4e4e4;
+            display: inline-block;
+            border-radius: 15px;
+            background-color: white;
+            position: relative;
+            bottom: -20px;
+        }
+        .checkIcon, li:before, .brilliant::after {
+            font-family: "FontAwesome";
+            content: "\f00c";
+        }
+        .brilliant {
+            border-color: #33c4b6;
+        }
+        .brilliant::before {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 64px 64px 0 0;
+            border-color: #3bc6b8 transparent transparent transparent;
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+        }
+        .brilliant::after {
+            color: white;
+            position: absolute;
+            left: 9px;
+            top: 6px;
+            text-shadow: 0 0 2px #37c5b6;
+            font-size: 1.4rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,46 +108,94 @@
             <li><a href="events.html">Events</a></li>
             <li><a href="sched.html">Schedule</a></li>
             <li><a href="memb.html">Membership</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="store.html">Store</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
 
-        <!-- MEMBERSHIP -->
-        <div class="mainTextBox">
-            MEMBERSHIP INSTRUCTIONS
-        </div>
+    </div>
 
-        <!-- FOOTER -->
+    <!-- MEMBERSHIP -->
+    <div class="mainTextBox">
+        <div class='wrapper'>
+            <div class='package'>
+                <div class='name'>Limited</div>
+                <div class='price'>€2</div>
+                <div class='trial'>Available for a month</div>
+                <hr>
+                <ul>
+                    <li>
+                    <strong>8</strong>
+                    team members
+                    </li>
+                    <li>
+                    <strong>6</strong>
+                    team playlists
+                    </li>
+                    <li>
+                    <strong>Unlimited</strong>
+                    public playlists
+                    </li>
+                </ul>
+            </div>
+            <div class='package brilliant'>
+                <div class='name'>Brilliant</div>
+                <div class='price'>€5</div>
+                <div class='trial'>Free 30 day trial</div>
+                <hr>
+                <ul>
+                    <li>
+                    <strong>Unlimited</strong>
+                    team members
+                    </li>
+                    <li>
+                    <strong>Unlimited</strong>
+                    team playlists
+                    </li>
+                    <li>
+                    <strong>Unlimited</strong>
+                    public playlists
+                    </li>
+                    <li>
+                    Team analytics
+                    </li>
+                    <li>
+                    Send files
+                    </li>
+                </ul>
+            </div>
+            <div class='package'>
+                <div class='name'>Basic</div>
+                <div class='price'>€0</div>
+                <div class='trial'>Totally free</div>
+                <hr>
+                <ul>
+                    <li>
+                    <strong>5</strong>
+                    team members
+                    </li>
+                    <li>
+                    <strong>3</strong>
+                    team playlists
+                    </li>
+                    <li>
+                    <strong>Unlimited</strong>
+                    public playlists
+                    </li>
+                </ul>
+                </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="basic">
+
         <footer class="footBox">
             <div class="foot1">
                 <h3 class="footHead"><em>SOCIAL MEDIA</em></h3>
                 <p class="footText">
                     Join our growing community of dancers and<br>
                     keep up to date with upcoming events.<br>
-                </p>
-            </div>
-
-            <div class="foot2">
-                <h3 class="footHead"><em>CONTACT US</em></h3>
-                <p class="footText">
-                    UNIVERSITY OF ALBERTA HIP HOP CLUB<br>
-                    uahiphop@ualberta.ca
-                </p>
-            </div>
-
-            <div class="foot3">
-                <h3 class="footHead"><em>LOCATION</em></h3>
-                <p class="footText">
-                    STUDIO 1-650<br>
-                    3-100 University Hall Van Vliet Complex<br>
-                    Edmonton | Alberta | T6G 2H9
-                </p>
-            </div>
-
-            <div class="foot4">
-                <h3 class="footHead"><em>SITEMAP</em></h3>
-                <p class="footText">
-                    INTEGRATE INTERACTIVE SITEMAP
+                    Put like social media thingy here
                 </p>
             </div>
         </footer>

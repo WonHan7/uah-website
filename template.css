@@ -504,6 +504,20 @@ hr {
 }
 
 
+/* For "contact.html" */
+.contactFormBox {
+    
+}
+.contactMap {
+    margin-top: 0px;
+    
+    padding: 0px;
+
+    background-color: rgb(255,255,255);
+    color: rgb(255,255,255);
+}
+
+
 .footBox {
     margin-top: 10px;
 

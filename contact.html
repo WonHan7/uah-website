@@ -4,6 +4,11 @@
     <!-- ALL IMPORTS GO HERE -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="template.css" media="screen"/>
+    <script src="lib/con_script.js"></script>
+
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -27,38 +32,28 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
 
-        <!-- EVENTS -->
-        <div class="showcaseBox">
-            <div class="showBox">
-                <img src="images/BreakTeam.jpg" class="showLogo" style="float:left;" alt="">
-            </div>
-            <div class="showTextBox" style="float:right;">
-                <p class="showText fade-in">
-                    SHOWCASE | FILLER TEXT
-                </p>
-            </div>
+        <!-- MEMBERSHIP -->
+        <div class="contactFormBox">
+            <h1>SEND US A MESSAGE</h1>
+            <h2>Interested in finding out more about our community events, membership, or anything else? Contact us through this form!</h2>
+            <p>This is ualberta email: uahiphop@ualberta.ca</p>
         </div>
 
-        <div class="eventBox">
-            <div class="eBox">
-                <img src="images/Event3.jpg" class="eventLogo" style="float:right;" alt="">
-            </div>
-            <div class="eventTextBox" style="float: left;">
-                <p class="eventText fade-in">
-                    VIGNETTES | FILLER TEXT
-                </p>
-            </div>
+        <div>
+            <input type="text" placeholder="First Name" id="firstName" />
+            <input type="text" placeholder="Last Name" id="lastName" />
+            <br>
+            <input type="email" placeholder="Email" id="email" />
+            <br>
+            <textarea id="message" placeholder="Message" rows="10"></textarea>
+            <br>
+            <br>
+            <button onclick="sendContact();">Submit</button>
         </div>
 
-        <div class="gameBox">
-            <div class="gBox">
-                <img src="images/Games3.jpg" class="gameLogo" style="float:left;" alt="">
-            </div>
-            <div class="gameTextBox" style="float: right;">
-                <p class="gameText fade-in">
-                    GAMES NIGHT | FILLER TEXT
-                </p>
-            </div>
+        <div class="contactMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419.2943762888289!2d-113.52791863558143!3d53.524071841955724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a021f536c8f601%3A0x7a8cf2d9ea07e3d6!2sIntramural%2FRec%20Sports%20Office!5e0!3m2!1sen!2sca!4v1593899415195!5m2!1sen!2sca"
+                    width="2000" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
 
         <!-- FOOTER -->
