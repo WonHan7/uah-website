@@ -3,12 +3,9 @@
 <head>
     <!-- ALL IMPORTS GO HERE -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="template.css" media="screen"/>
-    <script src="lib/con_script.js"></script>
 
-    <style>
-
-    </style>
 </head>
 
 <body>
@@ -32,43 +29,67 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
 
-        <!-- MEMBERSHIP -->
-        <div class="contactFormBox">
-            <h1>SEND US A MESSAGE</h1>
-            <h2>Interested in finding out more about our community events, membership, or anything else? Contact us through this form!</h2>
-            <p>This is ualberta email: uahiphop@ualberta.ca</p>
-        </div>
+        <!-- CONTACT FORM -->
+        <div id="conBgd" class="conTextBox">
+            <div class="wrapCon">
+                <div class="conPic">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419.2943762888289!2d-113.52791863558143!3d53.524071841955724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a021f536c8f601%3A0x7a8cf2d9ea07e3d6!2sIntramural%2FRec%20Sports%20Office!5e0!3m2!1sen!2sca!4v1593899415195!5m2!1sen!2sca"
+                            width="500" height="450" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <form class="conForm validate-form" action="contactForm.php" method="post">
+                    <span class="conTitle" style="color:black">
+                        HAVE ANY QUESTIONS?
+                        <br>
+                        SEND US A MESSAGE!
+                    </span>
 
-        <div>
-            <input type="text" placeholder="First Name" id="firstName" />
-            <input type="text" placeholder="Last Name" id="lastName" />
-            <br>
-            <input type="email" placeholder="Email" id="email" />
-            <br>
-            <textarea id="message" placeholder="Message" rows="10"></textarea>
-            <br>
-            <br>
-            <button onclick="sendContact();">Submit</button>
-        </div>
+                    <div class="wrapIn validate-input" data-validate = "Name is required">
+                        <input class="inText" type="text" name="name" placeholder="Name">
+                        <span class="inClick"></span>
+                        <span class="symClick">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                    </div>
 
-        <div class="contactMap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419.2943762888289!2d-113.52791863558143!3d53.524071841955724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a021f536c8f601%3A0x7a8cf2d9ea07e3d6!2sIntramural%2FRec%20Sports%20Office!5e0!3m2!1sen!2sca!4v1593899415195!5m2!1sen!2sca"
-                    width="2000" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="wrapIn validate-input" data-validate = "Valid email is required: JohnDoe@mail.net">
+                        <input class="inText" type="text" name="email" placeholder="Email">
+                        <span class="inClick"></span>
+                        <span class="symClick">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="wrapIn validate-input" data-validate = "Message is required">
+                        <textarea class="inText" name="message" placeholder="Message"></textarea>
+                        <span class="inClick"></span>
+                    </div>
+
+                    <div class="btnContainer">
+                        <button type="submit" name="submit" class="conBtn">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <!-- FOOTER -->
-        <footer class="footBox">
-            <div class="foot1">
-                <h3 class="footHead"><em>SOCIAL MEDIA</em></h3>
-                <p class="footText">
-                    Join our growing community of dancers and<br>
-                    keep up to date with upcoming events.<br>
-                    Put like social media thingy here
-                </p>
-            </div>
-        </footer>
+        <div class="basic">
+
+            <footer class="footBox">
+                <div class="foot1">
+                    <h3 class="footHead"><em>SOCIAL MEDIA</em></h3>
+                    <p class="footText">
+                        Join our growing community of dancers and<br>
+                        keep up to date with upcoming events.<br>
+                        Put like social media thingy here
+                    </p>
+                </div>
+            </footer>
 
     </div>
+
+    <script type="text/javascript" src="contact.js"></script>
 
 </body>
 </html>
