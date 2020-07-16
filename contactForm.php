@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     $message = $_POST['message'];
     $subject = "UAH_CONTACT_FORM"
 
-    $mailTo = "dhan@neighborhoodbridges.ca"
+    $mailTo = "wonhan@uofahiphop.com"
     //Won't work with gmail address so I will have to forward it from my
     //website hosting email using a new alias
 

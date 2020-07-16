@@ -105,11 +105,30 @@ hr {
 }
 
 
-.basic {
-    font-family: 'Lato', sans-serif;
+.navText {
+    font-family: 'Lato';
+    font-weight: 800;
     text-align: center;
     color: rgb(0,0,0);
 }
+.contentText {
+    font-family: 'Lato';
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0,0,0);
+}
+.contentText2 {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(0,0,0);
+}
+.footText {
+    font-family: 'Lato';
+    text-align: center;
+    color: rgb(0,0,0);
+}
+
 
 
 .logoBox {
@@ -607,58 +626,8 @@ textarea:-ms-input-placeholder { color: #aaaaaa; }
 
 /* Footer */
 .footBox {
-    margin-top: 10px;
-
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    font-size: 10px;
-}
-.foot1 {
-    width: 24%;
-
-    text-align: center;
-    display: inline-block;
-}
-.foot2 {
-    width: 24%;
-
-    text-align: center;
-    display: inline-block;
-}
-.foot3 {
-    width: 24%;
-
-    text-align: center;
-    display: inline-block;
-}
-.foot4 {
-    width: 24%;
-
-    text-align: center;
-    display: inline-block;
-}
-
-
-.foot1 div, p {
-    display: inline-block;
-}
-.foot2 div, p {
-    display: inline-block;
-}
-.foot3 div, p {
-    display: inline-block;
-}
-.foot4 div, p {
-    display: inline-block;
-}
-
-
-.footHead {
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-.footText {
-    margin-bottom: 2px;
-    font-size: 18px;
+    margin-top: 0px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

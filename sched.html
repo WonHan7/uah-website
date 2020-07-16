@@ -3,6 +3,10 @@
 <head>
     <!-- ALL IMPORTS GO HERE -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" type="text/css" href="template.css" media="screen"/>
 
     <!-- ALL CSS STYLES GO HERE -->
@@ -147,7 +151,7 @@
 <body>
 
     <!-- HEADER -->
-    <div class="basic">
+    <div class="navText">
 
         <div class="logoBox">
             <img src="images/UAH2.png" class="headLogo" alt="University of Alberta Hip Hop Club">
@@ -168,79 +172,90 @@
     </div>
 
     <!-- SCHEDULE -->
-    <section id="timeline" style="line-height: 1.75;">
+    <div class="contentText2">
 
-        <div class="tl-item">
-            <div class="tl-bg" style="background-image: url(images/Break_Intro.jpg)"></div>
-        
-            <div class="tl-year">
-                <p class="f2 heading--sanSerif">MONDAY</p>
+        <section id="timeline" style="line-height: 1.75;">
+
+            <div class="tl-item">
+                <div class="tl-bg" style="background-image: url(images/Break_Intro.jpg)"></div>
+            
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">MONDAY</p>
+                </div>
+            
+                <div class="tl-content">
+                    <h1>BREAKING | PERFORMANCE TEAM</h1>
+                    <p>FILLER TEXT ABOUT BREAKING AND PERFORMANCE TEAM</p>
+                </div>
             </div>
         
-            <div class="tl-content">
-                <h1>BREAKING | PERFORMANCE TEAM</h1>
-                <p>FILLER TEXT ABOUT BREAKING AND PERFORMANCE TEAM</p>
-            </div>
-        </div>
-      
-        <div class="tl-item">
-      
-            <div class="tl-bg" style="background-image: url(images/Dance_Drop3.jpg)"></div>
+            <div class="tl-item">
         
-            <div class="tl-year">
-                <p class="f2 heading--sanSerif">TUESDAY</p>
-            </div>
+                <div class="tl-bg" style="background-image: url(images/Dance_Drop3.jpg)"></div>
+            
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">TUESDAY</p>
+                </div>
+            
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">UNKNOWN CLASS</h1>
+                    <p>FILLER TEXT</p>
+                </div>
         
-            <div class="tl-content">
-                <h1 class="f3 text--accent ttu">UNKNOWN CLASS</h1>
-                <p>FILLER TEXT</p>
-            </div>
-      
-        </div>
-      
-        <div class="tl-item">
-      
-            <div class="tl-bg" style="background-image: url(images/Dance_Drop4.jpg)"></div>
-        
-            <div class="tl-year">
-                <p class="f2 heading--sanSerif">WEDNESDAY</p>
             </div>
         
-            <div class="tl-content">
-                <h1 class="f3 text--accent ttu">URBAN CHOREO<br>| BEGINNER & INTERMEDIATE |</h1>
-                <p>FILLTER TEXT ABOUT BEGINNER CLASSES</p>
-            </div>
-      
-        </div>
-      
-        <div class="tl-item">
-      
-            <div class="tl-bg" style="background-image: url(images/Advanced_Drop1.jpg)"></div>
+            <div class="tl-item">
         
-            <div class="tl-year">
-                <p class="f2 heading--sanSerif">THURSDAY</p>
+                <div class="tl-bg" style="background-image: url(images/Dance_Drop4.jpg)"></div>
+            
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">WEDNESDAY</p>
+                </div>
+            
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">URBAN CHOREO<br>| BEGINNER & INTERMEDIATE |</h1>
+                    <p>FILLTER TEXT ABOUT BEGINNER CLASSES</p>
+                </div>
+        
             </div>
         
-            <div class="tl-content">
-                <h1 class="f3 text--accent ttu">URBAN CHOREO<br>| ADVANCED |</h1>
-                <p>FILLER TEXT ABOUT ADVANCED CLASSES</p>
+            <div class="tl-item">
+        
+                <div class="tl-bg" style="background-image: url(images/Advanced_Drop1.jpg)"></div>
+            
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">THURSDAY</p>
+                </div>
+            
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">URBAN CHOREO<br>| ADVANCED |</h1>
+                    <p>FILLER TEXT ABOUT ADVANCED CLASSES</p>
+                </div>
+
             </div>
 
-        </div>
-
-    </section>
+        </section>
+    
+    </div>
 
     <!-- FOOTER -->
-    <div class="basic">
+    <div class="footText">
 
         <footer class="footBox">
             <div class="foot1">
-                <h3 class="footHead"><em>SOCIAL MEDIA</em></h3>
-                <p class="footText">
-                    Join our growing community of dancers and<br>
-                    keep up to date with upcoming events.<br>
-                    Put like social media thingy here
-                </p>
+                <div class="social">
+                    <a class="social-icon" data-tooltip="Facebook" target="_blank" href="https://www.facebook.com/uofahiphop/">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="social-icon" data-tooltip="YouTube" target="_blank" href="https://www.youtube.com/channel/UCEJ0fSwC7eAL4xGLbvrVmkw">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="social-icon" data-tooltip="Instagram" target="_blank" href="https://www.instagram.com/uofahiphop/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
         </footer>
 

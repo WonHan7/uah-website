@@ -3,98 +3,18 @@
 <head>
     <!-- ALL IMPORTS GO HERE -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" type="text/css" href="template.css" media="screen"/>
 
-    <style>
-        .wrapper {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin: -190px 0 0 -468px;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            color: #9f9f9f;
-            font-size: 15px;
-        }
-        .package {
-            box-sizing: border-box;
-            width: 301px;
-            height: 380px;
-            border: 3px solid #e8e8e8;
-            border-radius: 7px;
-            display: inline-block;
-            padding: 24px;
-            text-align: center;
-            float: left;
-            -webkit-transition: margin-top .5s linear;
-            transition: margin-top .5s linear;
-            position: relative;
-            margin-right: 11px;
-        }
-        .package:hover {
-            margin-top: -30px;
-            -webkit-transition: margin-top .3s linear;
-            transition: margin-top .3s linear;
-        }
-        .name {
-            color: #565656;
-            font-weight: 300;
-            font-size: 3rem;
-            margin-top: -5px;
-        }
-        .price {
-            margin-top: 7px;
-            font-weight: bold;
-        }
-        .price::after {
-            content: " / month per user";
-            font-weight: normal;
-        }
-        .trial {
-            font-size: .9rem;
-            font-weight: 600;
-            padding: 2px 21px 2px 21px;
-            color: #33c4b6;
-            border: 1px solid #e4e4e4;
-            display: inline-block;
-            border-radius: 15px;
-            background-color: white;
-            position: relative;
-            bottom: -20px;
-        }
-        .checkIcon, li:before, .brilliant::after {
-            font-family: "FontAwesome";
-            content: "\f00c";
-        }
-        .brilliant {
-            border-color: #33c4b6;
-        }
-        .brilliant::before {
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 64px 64px 0 0;
-            border-color: #3bc6b8 transparent transparent transparent;
-            position: absolute;
-            left: 0;
-            top: 0;
-            content: "";
-        }
-        .brilliant::after {
-            color: white;
-            position: absolute;
-            left: 9px;
-            top: 6px;
-            text-shadow: 0 0 2px #37c5b6;
-            font-size: 1.4rem;
-        }
-    </style>
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <div class="basic">
+    <div class="navText">
 
         <div class="logoBox">
             <img src="images/UAH2.png" class="headLogo" alt="University of Alberta Hip Hop Club">
@@ -115,88 +35,30 @@
     </div>
 
     <!-- MEMBERSHIP -->
-    <div class="mainTextBox">
-        <div class='wrapper'>
-            <div class='package'>
-                <div class='name'>Limited</div>
-                <div class='price'>€2</div>
-                <div class='trial'>Available for a month</div>
-                <hr>
-                <ul>
-                    <li>
-                    <strong>8</strong>
-                    team members
-                    </li>
-                    <li>
-                    <strong>6</strong>
-                    team playlists
-                    </li>
-                    <li>
-                    <strong>Unlimited</strong>
-                    public playlists
-                    </li>
-                </ul>
-            </div>
-            <div class='package brilliant'>
-                <div class='name'>Brilliant</div>
-                <div class='price'>€5</div>
-                <div class='trial'>Free 30 day trial</div>
-                <hr>
-                <ul>
-                    <li>
-                    <strong>Unlimited</strong>
-                    team members
-                    </li>
-                    <li>
-                    <strong>Unlimited</strong>
-                    team playlists
-                    </li>
-                    <li>
-                    <strong>Unlimited</strong>
-                    public playlists
-                    </li>
-                    <li>
-                    Team analytics
-                    </li>
-                    <li>
-                    Send files
-                    </li>
-                </ul>
-            </div>
-            <div class='package'>
-                <div class='name'>Basic</div>
-                <div class='price'>€0</div>
-                <div class='trial'>Totally free</div>
-                <hr>
-                <ul>
-                    <li>
-                    <strong>5</strong>
-                    team members
-                    </li>
-                    <li>
-                    <strong>3</strong>
-                    team playlists
-                    </li>
-                    <li>
-                    <strong>Unlimited</strong>
-                    public playlists
-                    </li>
-                </ul>
-                </div>
+    <div class="contentText">
+        <div class="mainTextBox">
+            Next
         </div>
     </div>
 
     <!-- FOOTER -->
-    <div class="basic">
+    <div class="footText">
 
         <footer class="footBox">
             <div class="foot1">
-                <h3 class="footHead"><em>SOCIAL MEDIA</em></h3>
-                <p class="footText">
-                    Join our growing community of dancers and<br>
-                    keep up to date with upcoming events.<br>
-                    Put like social media thingy here
-                </p>
+                <div class="social">
+                    <a class="social-icon" data-tooltip="Facebook" target="_blank" href="https://www.facebook.com/uofahiphop/">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="social-icon" data-tooltip="YouTube" target="_blank" href="https://www.youtube.com/channel/UCEJ0fSwC7eAL4xGLbvrVmkw">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="social-icon" data-tooltip="Instagram" target="_blank" href="https://www.instagram.com/uofahiphop/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
         </footer>
 
