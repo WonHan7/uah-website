@@ -48,7 +48,6 @@ div {
     margin: 0 auto; /*this will cause the div to be in the center*/
 }
 
-
 .fade-in {
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -621,6 +620,30 @@ textarea:-ms-input-placeholder { color: #aaaaaa; }
       visibility: visible;
       opacity: 1;
     }
+}
+
+
+/* For "about.html" */
+#abtBgd {
+    background-image: url("images/footerIMG1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+}
+.abtTextBox {
+    margin-top: 0px;
+
+    padding-top: 350px;
+    padding-bottom: 575px;
+
+    color: rgb(255,255,255);
+}
+.abtText {
+    font-family: 'Lato';
+    font-weight: 800;
+    font-size: 48px;
+    text-align: center;
 }
 
 

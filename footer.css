@@ -29,31 +29,10 @@
       opacity: 1;
     }
   }
-  /* General styles */
-  body {
-    background-color: white;
-    font-family: "Lato", Arial, sans-serif;
-    text-align: center;
-    padding-top: 30px;
-  }
   
-  h1 {
-    font-size: 2em;
-    color: #666;
-  }
-  
-  h2, a {
-    font-size: 1em;
-    color: #77cc6d;
-  }
-  
-  .social {
-    margin: 60px auto;
-  }
-  
-  /* ============================ */
-  /* SOCIAL ICONS                 */
-  /* ============================ */
+/* ============================ */
+/* SOCIAL ICONS                 */
+/* ============================ */
   .social-icon {
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding-box;
@@ -164,9 +143,9 @@
     width: 20px;
   }
   
-  /* ============================ */
-  /* TOOLTIP                      */
-  /* ============================ */
+/* ============================ */
+/* TOOLTIP                      */
+/* ============================ */
   [data-tooltip] {
     position: relative;
     /* tooltip arrow */
