@@ -4,9 +4,9 @@ if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $mailFrom = $_POST['email'];
     $message = $_POST['message'];
-    $subject = "UAH_CONTACT_FORM"
+    $subject = "UAH_CONTACT_FORM";
+    $mailTo = "wonhan@uofahiphop.com";
 
-    $mailTo = "wonhan@uofahiphop.com"
     //Won't work with gmail address so I will have to forward it from my
     //website hosting email using a new alias
 
@@ -15,5 +15,6 @@ if (isset($_POST['submit'])) {
 
     mail($mailTo, $subject, $txt, $headers);
 
-    // header("Location: index.php?mailsend");
+    header("Location: contact_s.html?mailsend");
 }
+?>
