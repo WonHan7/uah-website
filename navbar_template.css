@@ -1,0 +1,46 @@
+/* For NAV BAR */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;600;700&display=swap');
+
+.logoBox {
+    margin: 0px;
+
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    font-size: 48px;
+    text-align: center;
+}
+
+.navText {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(0,0,0);
+}
+.navBarBox {
+    margin: 0px;
+
+    padding-bottom: 10px;
+
+    list-style-type: none;
+}
+.navBarBox li {
+    display: inline-block;
+    padding: 20px;
+}
+
+a:link, :visited {
+    color: rgba(0,0,0,1);
+    opacity: 0.5;
+    padding: 20px;
+    text-decoration: none;
+}
+a:hover {
+    opacity: 1;
+}
+
+hr {
+    margin:0 auto;
+    margin-bottom: 10px;
+    width: 37.5%;
+}

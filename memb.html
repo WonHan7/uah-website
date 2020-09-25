@@ -1,13 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <!-- ALL IMPORTS GO HERE -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <!-- ALL IMPORTS GO HERE -->
     <link rel="stylesheet" type="text/css" href="template.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="navbar_template.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="memb_template.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="footer.css" media="screen"/>
 
 </head>
 
@@ -25,10 +24,10 @@
 
         <ul class="navBarBox">
             <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="sched.html">Schedule</a></li>
             <li><a href="memb.html">Membership</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="class.html">Classes</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
 
@@ -36,8 +35,22 @@
 
     <!-- MEMBERSHIP -->
     <div class="contentText">
-        <div class="mainTextBox">
-            Next
+        <div class="membTextBox">
+            <button class="student">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <a href="student_memb.html"> <span class="button-text">Student</span> </a>
+            </button>
+
+            <br>
+
+            <button class="student">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <a href="nonstudent_memb.html"> <span class="button-text">Non-student</span> </a>
+            </button>
         </div>
     </div>
 

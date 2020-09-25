@@ -1,151 +1,13 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
 <head>
+
     <!-- ALL IMPORTS GO HERE -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
     <link rel="stylesheet" type="text/css" href="template.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="navbar_template.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="sched_template.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="footer.css" media="screen"/>
 
-    <!-- ALL CSS STYLES GO HERE -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif;
-            font-size: 16px;
-        }
-        #timeline {
-            display: -webkit-box;
-            display: flex;
-            background-color: #031625;
-        }
-        #timeline:hover .tl-item {
-            width: 23.3333%;
-        }
-
-        .tl-item {
-            -webkit-transform: translate3d(0, 0, 0);
-                    transform: translate3d(0, 0, 0);
-            position: relative;
-            width: 25%;
-            height: 100vh;
-            min-height: 600px;
-            color: #fff;
-            overflow: hidden;
-            -webkit-transition: width 0.5s ease;
-            transition: width 0.5s ease;
-        }
-        .tl-item:before, .tl-item:after {
-            -webkit-transform: translate3d(0, 0, 0);
-                    transform: translate3d(0, 0, 0);
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-        }
-        .tl-item:after {
-            background: rgba(3, 22, 37, 0.85);
-            opacity: 1;
-            -webkit-transition: opacity 0.5s ease;
-            transition: opacity 0.5s ease;
-        }
-        .tl-item:before {
-            background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(75%, black));
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
-            z-index: 1;
-            opacity: 0;
-            -webkit-transform: translate3d(0, 0, 0) translateY(50%);
-                    transform: translate3d(0, 0, 0) translateY(50%);
-            -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
-            transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
-            transition: opacity 0.5s ease, transform 0.5s ease;
-            transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
-        }
-        .tl-item:hover {
-            width: 30% !important;
-        }
-        .tl-item:hover:after {
-            opacity: 0;
-        }
-        .tl-item:hover:before {
-            opacity: 1;
-            -webkit-transform: translate3d(0, 0, 0) translateY(0);
-                    transform: translate3d(0, 0, 0) translateY(0);
-            -webkit-transition: opacity 1s ease, -webkit-transform 1s ease 0.25s;
-            transition: opacity 1s ease, -webkit-transform 1s ease 0.25s;
-            transition: opacity 1s ease, transform 1s ease 0.25s;
-            transition: opacity 1s ease, transform 1s ease 0.25s, -webkit-transform 1s ease 0.25s;
-        }
-        .tl-item:hover .tl-content {
-            opacity: 1;
-            -webkit-transform: translateY(0);
-                    transform: translateY(0);
-            -webkit-transition: all 0.75s ease 0.5s;
-            transition: all 0.75s ease 0.5s;
-            }
-            .tl-item:hover .tl-bg {
-            -webkit-filter: grayscale(0);
-                    filter: grayscale(0);
-        }
-
-        .tl-content {
-            -webkit-transform: translate3d(0, 0, 0) translateY(25px);
-                    transform: translate3d(0, 0, 0) translateY(25px);
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            margin: 0 1.618em;
-            top: 55%;
-            opacity: 0;
-        }
-        .tl-content h1 {
-            font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
-            text-transform: uppercase;
-            color: #1779cf;
-            font-size: 1.44rem;
-            font-weight: normal;
-        }
-
-        .tl-year {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translateX(-50%) translateY(-50%);
-                    transform: translateX(-50%) translateY(-50%);
-            z-index: 1;
-        }
-        .tl-year p {
-            font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
-            font-size: 1.728rem;
-            line-height: 0;
-        }
-
-        .tl-bg {
-            -webkit-transform: translate3d(0, 0, 0);
-                    transform: translate3d(0, 0, 0);
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-size: cover;
-            background-position: center center;
-            -webkit-transition: -webkit-filter 0.5s ease;
-            transition: -webkit-filter 0.5s ease;
-            transition: filter 0.5s ease;
-            transition: filter 0.5s ease, -webkit-filter 0.5s ease;
-            -webkit-filter: grayscale(100%);
-                    filter: grayscale(100%);
-        }
-    </style>
 </head>
 
 <body>
@@ -162,10 +24,10 @@
 
         <ul class="navBarBox">
             <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="sched.html">Schedule</a></li>
             <li><a href="memb.html">Membership</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="class.html">Classes</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
 
@@ -180,12 +42,16 @@
                 <div class="tl-bg" style="background-image: url(images/Break_Intro.jpg)"></div>
             
                 <div class="tl-year">
-                    <p class="f2 heading--sanSerif">MONDAY</p>
+                    <p style="font-size: 36px; font-weight: 400;">MONDAY</p>
                 </div>
             
                 <div class="tl-content">
-                    <h1>BREAKING | PERFORMANCE TEAM</h1>
-                    <p>FILLER TEXT ABOUT BREAKING AND PERFORMANCE TEAM</p>
+                    <h1>| BREAKING |</h1>
+                    <p>
+                       VVC 1-650<br>
+                       5:00-8:00PM<br>
+                       FALL SEMESTER: SEPT 28 - NOV 26
+                    </p>
                 </div>
             </div>
         
@@ -194,12 +60,16 @@
                 <div class="tl-bg" style="background-image: url(images/Dance_Drop3.jpg)"></div>
             
                 <div class="tl-year">
-                    <p class="f2 heading--sanSerif">TUESDAY</p>
+                    <p style="font-size: 36px; font-weight: 400;">TUESDAY</p>
                 </div>
             
                 <div class="tl-content">
-                    <h1 class="f3 text--accent ttu">UNKNOWN CLASS</h1>
-                    <p>FILLER TEXT</p>
+                    <h1 class="f3 text--accent ttu">| PERFORMANCE TEAM |</h1>
+                    <p>
+                       VVC 1-650<br>
+                       5:00-8:00PM<br>
+                       FALL SEMESTER: SEPT 28 - NOV 26
+                    </p>
                 </div>
         
             </div>
@@ -209,12 +79,16 @@
                 <div class="tl-bg" style="background-image: url(images/Dance_Drop4.jpg)"></div>
             
                 <div class="tl-year">
-                    <p class="f2 heading--sanSerif">WEDNESDAY</p>
+                    <p style="font-size: 36px; font-weight: 400;">WEDNESDAY</p>
                 </div>
             
                 <div class="tl-content">
-                    <h1 class="f3 text--accent ttu">URBAN CHOREO<br>| BEGINNER & INTERMEDIATE |</h1>
-                    <p>FILLTER TEXT ABOUT BEGINNER CLASSES</p>
+                    <h1 class="f3 text--accent ttu">| BEGINNER/INTERMEDIATE |</h1>
+                    <p>
+                       ONLINE CLASS<br>
+                       5:00-8:00PM<br>
+                       FALL SEMESTER: SEPT 28 - NOV 26
+                    </p>
                 </div>
         
             </div>
@@ -224,12 +98,16 @@
                 <div class="tl-bg" style="background-image: url(images/Advanced_Drop1.jpg)"></div>
             
                 <div class="tl-year">
-                    <p class="f2 heading--sanSerif">THURSDAY</p>
+                    <p style="font-size: 36px; font-weight: 400;">THURSDAY</p>
                 </div>
             
                 <div class="tl-content">
-                    <h1 class="f3 text--accent ttu">URBAN CHOREO<br>| ADVANCED |</h1>
-                    <p>FILLER TEXT ABOUT ADVANCED CLASSES</p>
+                    <h1 class="f3 text--accent ttu">| ADVANCED |</h1>
+                    <p>
+                       ONLINE CLASS<br>
+                       5:00-8:00PM<br>
+                       FALL SEMESTER: SEPT 28 - NOV 26
+                    </p>
                 </div>
 
             </div>

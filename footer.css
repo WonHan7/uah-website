@@ -218,4 +218,15 @@
     opacity: 1;
     visibility: visible;
   }
+
+.footText {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  color: rgb(0,0,0);
+}
+.footBox {
+  margin-top: 0px;
   
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
