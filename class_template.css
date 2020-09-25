@@ -1,1 +1,15 @@
 /* For "class.html" */
+
+.classBox {
+    margin-top: 0px;
+
+    width: 75%;
+    
+    padding-top: 500px;
+    padding-bottom: 500px;
+
+    overflow: scroll;
+
+    background-color: rgba(0,0,11,1);
+    color: rgb(255,255,255);
+}
