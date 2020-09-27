@@ -1,15 +1,80 @@
 /* For "class.html" */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;700&display=swap');
 
-.classBox {
-    margin-top: 0px;
-
-    width: 75%;
-    
-    padding-top: 500px;
-    padding-bottom: 500px;
-
-    overflow: scroll;
-
+.videoSet {
+    border: none;
+    width: 28rem;
+    height: 16rem;
+}
+.Panel {
+	width: 100%;
+	max-width: 2000px;
+    margin: 30px auto;
+}
+.Panel__body__beg {
     background-color: rgba(0,0,11,1);
-    color: rgb(255,255,255);
+    padding: 10px 20px;
+}
+.Panel__body__adv {
+    background-color: rgba(0,0,11,1);
+    padding: 10px 20px;
+}
+.Panel__body__eve {
+    background-color: rgba(0,0,11,1);
+    padding: 10px 20px;
+}
+.Tabs {
+	margin: 0;
+	padding: 0;
+	position: relative;
+    background-color: rgba(0,0,11,0.85);
+    list-style: none;
+}
+.Tabs:after {
+	content: ' ';
+	display: table;
+	clear: both;
+}
+.Tabs__tab {
+	float: left;
+	width: 33.333%;
+	text-align: center;
+}
+.Tabs__tab:first-child.active ~ .Tabs__presentation-slider {
+	left: 0;
+}
+
+.Tabs__tab:nth-child(2).active ~ .Tabs__presentation-slider {
+	left: 33.333%;
+}
+.Tabs__tab:nth-child(3).active ~ .Tabs__presentation-slider {
+	left: calc(33.333% * 2);
+}
+.Tabs__presentation-slider {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 33.333%;
+	height: 4px;
+	background-color: rgba(255,255,255,1);
+	-webkit-transition: left .25s;
+	transition: left .25s;
+}
+.Tab {
+    font: 400 24px 'Source Sans Pro', sans-serif;
+    color: rgba(255,255,255,0.75);
+}
+.Tab > a {
+	display: block;
+	padding: 10px 12px;
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+	-webkit-transition: color .15s;
+	transition: color .15s;
+}
+.Tab.active > a {
+	color: rgba(255,255,255,1);
+}
+.Tab:hover > a {
+	color: rgba(255,255,255,1);
 }
