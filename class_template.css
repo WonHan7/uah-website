@@ -1,11 +1,6 @@
 /* For "class.html" */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;700&display=swap');
 
-.videoSet {
-    border: none;
-    width: 28rem;
-    height: 16rem;
-}
 button:focus,
 input:focus,
 textarea:focus,
@@ -82,8 +77,28 @@ select:focus {
 	margin-left: -100%;
 }
 .Panel__body {
+	margin-bottom: 40px;
 	background-color: rgba(0,0,11,1);
 	color: rgba(255,255,255,0.75);
 	font: 400 28px 'Source Sans Pro', sans-serif;
 	text-align: center;
+}
+.step__title {
+	color: rgba(255,255,255,1);
+	font: 500 28px 'Source Sans Pro', sans-serif;
+	text-align: inherit;
+}
+.step__pic {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+    border: none;
+	text-align: inherit;
+}
+.step__text {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: rgba(255,255,255,1);
+	font: 300 22px 'Source Sans Pro', sans-serif;
+	text-align: inherit;
 }
