@@ -218,8 +218,7 @@
     transform: translate(-50%, 0);
     opacity: 1;
     visibility: visible;
-  }
-
+}
 .footText {
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
