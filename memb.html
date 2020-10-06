@@ -14,7 +14,7 @@
 
 <body>
 
-    <!-- HEADER -->
+    <!-- NAV BAR -->
     <div class="navText">
 
         <div class="logoBox">
@@ -23,13 +23,15 @@
 
         <hr>
 
-        <ul class="navBarBox">
-            <li><a href="about.html">About</a></li>
-            <li><a href="sched.html">Schedule</a></li>
-            <li><a href="student_memb.html">Membership</a></li>
-            <li><a href="class.html">Classes</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+        <div class="topnav" id="myTopnav">
+            <a href="about.html" class="active left">About</a>
+            <a href="sched.html">Schedule</a>
+            <a href="student_memb.html">Membership</a>
+            <a href="class.html">Class</a>
+            <a href="contact.html">Contact us</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
 
     </div>
 
@@ -76,6 +78,8 @@
         </footer>
 
     </div>
+
+<script type="text/javascript" src="navbar.js"></script>
 
 </body>
 </html>
