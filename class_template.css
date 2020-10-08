@@ -103,3 +103,108 @@ select:focus {
 	font: 300 22px 'Source Sans Pro', sans-serif;
 	text-align: inherit;
 }
+
+@media screen and (max-width: 600px) {
+	button:focus,
+	input:focus,
+	textarea:focus,
+	select:focus {
+		outline: none;
+	}  
+	.tabs {
+		display: block;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin: 0;
+		overflow: hidden; 
+	}
+	.tabs [class^="tab"] label,
+	.tabs [class*=" tab"] label {
+		color: rgba(255,255,255,1);
+		font: 600 28px 'Source Sans Pro', sans-serif;
+		background-color: rgba(0,0,11,0.9);
+		cursor: pointer;
+		display: block;
+		line-height: 1em;
+		padding: 2rem 0;
+		text-align: center;
+	}
+	.tabs [class^="tab"] [type="radio"],
+	.tabs [class*=" tab"] [type="radio"] {
+		border-bottom: 0px solid rgba(0,0,11,1);
+		cursor: pointer;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		display: block;
+		width: 100%;
+	}
+	.tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
+	.tabs [class*=" tab"] [type="radio"]:hover,
+	.tabs [class*=" tab"] [type="radio"]:focus {
+		border-bottom: 0px solid rgba(0,0,11,1);
+	}
+	.tabs [class^="tab"] [type="radio"]:checked,
+	.tabs [class*=" tab"] [type="radio"]:checked {
+		border-bottom: 0px solid rgba(0,0,11,0.6);
+	}
+	.tabs [class^="tab"] [type="radio"]:checked + div,
+	.tabs [class*=" tab"] [type="radio"]:checked + div {
+		color: rgba(255,255,255,1);
+		opacity: 1;
+	}
+	.tabs [class^="tab"] [type="radio"] + div,
+	.tabs [class*=" tab"] [type="radio"] + div {
+		display: block;
+		opacity: 0;
+		padding: 2rem 0;
+		width: 90%;
+	}
+	.tabs .tab-2 {
+		width: 50%;
+	}
+	.tabs .tab-2 [type="radio"] + div {
+		width: 200%;
+		margin-left: 200%;
+	}
+	.tabs .tab-2 [type="radio"]:checked + div {
+		margin-left: 0;
+	}
+	.tabs .tab-2:last-child [type="radio"] + div {
+		margin-left: 100%;
+	}
+	.tabs .tab-2:last-child [type="radio"]:checked + div {
+		margin-left: -100%;
+	}
+	.Panel__body {
+		margin-bottom: 40px;
+		background-color: rgba(0,0,11,1);
+		color: rgba(255,255,255,0.75);
+		font: 400 28px 'Source Sans Pro', sans-serif;
+		text-align: center;
+	}
+	.step__title {
+		color: rgba(255,255,255,1);
+		font: 500 28px 'Source Sans Pro', sans-serif;
+		text-align: inherit;
+	}
+	.step__pic {
+		max-width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		border: none;
+		text-align: inherit;
+	}
+	.step__text {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		color: rgba(255,255,255,1);
+		font: 300 22px 'Source Sans Pro', sans-serif;
+		text-align: inherit;
+	}
+}
