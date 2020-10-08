@@ -89,6 +89,7 @@ select:focus {
 	text-align: inherit;
 }
 .step__pic {
+	max-width: 100%;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border-radius: 5px;
