@@ -1,11 +1,13 @@
 /* For "sched.html" */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
 }
 
@@ -94,7 +96,7 @@ body {
     opacity: 0;
 }
 .tl-content h1 {
-    font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
     color: #1779cf;
     font-size: 1.44rem;
@@ -109,7 +111,7 @@ body {
     z-index: 1;
 }
 .tl-year p {
-    font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.728rem;
     line-height: 0;
 }
@@ -216,7 +218,7 @@ body {
         opacity: 0;
     }
     .tl-content h1 {
-        font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
         text-transform: uppercase;
         color: #1779cf;
         font-size: 1.44rem;
@@ -231,7 +233,7 @@ body {
         z-index: 1;
     }
     .tl-year p {
-        font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
         font-size: 1.728rem;
         line-height: 0;
     }
