@@ -1,4 +1,4 @@
-# UAH-Website
+# University of Alberta Hip Hop Club's Website
 Public domain for the University of Alberta Hip Hop Club
 
 My LinkedIn - https://www.linkedin.com/in/wonhan7/
