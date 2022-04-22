@@ -1,5 +1,5 @@
-# University of Alberta Hip Hop Club's Website
-Public domain for the University of Alberta Hip Hop Club
+# University of Alberta Open Styles Dance Club's Website
+Public domain for the University of Alberta's OSD club
 
 My LinkedIn - https://www.linkedin.com/in/wonhan7/
 
